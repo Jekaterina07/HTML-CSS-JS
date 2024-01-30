@@ -1,0 +1,124 @@
+/* First Section */
+
+.wrapper {
+    background: red;
+    position: relative; /* Изменено с 'absolute' на 'relative' */
+    top: 0;
+    left: 0;
+    min-height: 50vh; /* Уменьшено с '100vh' на '50vh' */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 60px;
+}
+
+.left-col , .rigth-col {flex: 1;}
+
+.rigth-col img {width: 100%;}
+
+.title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.order-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    background: white;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.15s ease-in-out;
+    color: red;
+}
+
+.order-btn:hover {color: #e0b10d;}
+
+/* Responsive page for first section*/
+@media(max-width:820px){
+    .wrapper {
+        position: relative;
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+}
+
+.card-deck .card {
+    flex: 1 0 calc(33.333% - 1em);
+    margin: 0.5em;
+}
+
+
+.view {
+    position: relative;
+}
+
+.view .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Белый цвет с небольшой прозрачностью */
+    transition: background-color 0.5s ease; /* Плавный переход */
+}
+
+.view:hover .mask {
+    background-color: rgba(255, 255, 255, 0); /* Полностью прозрачный при наведении */
+}
+
+.containeris {
+    background-color: red;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.containeris h2 {
+    color: white;
+}
+
+.containeris button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button {
+    background-color: #f5f5dc;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
